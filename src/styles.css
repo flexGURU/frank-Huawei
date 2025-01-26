@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Fredoka:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Fredoka:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Tilt+Prism&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.bg-navbar {
+    @apply text-ellipsis;
+}
+.btn {
+    @apply rounded-full bg-primary p-4 font-semibold transition-all duration-1000 ease-in-out border-2 border-[#4c1f75];
+}
+
+.btn:hover {
+    @apply bg-gradient-to-r from-[#4c1f75] to-[#2c1640] ;
+}
+
+
+
+
+.nav-hover {
+    @apply cursor-pointer relative py-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-slate-300 after:transition-all after:duration-300 hover:after:w-full;
+}
+
+.word-art {
+    @apply relative inline-block;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(9deg, #ff82f3, #7b13ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: shimmer 2s infinite;
+}
+
+.socials {
+    @apply rounded-full bg-[#212529] text-white p-9 transition-all duration-300;
+}
+
+.socials:hover {
+    @apply bg-gradient-to-r from-[#4c1f75] to-[#2c1640];
+}
+
+.service-card {
+    @apply bg-[#212529] p-10 flex flex-col md:flex-row gap-4 md:gap-16 rounded-lg rounded-b-none border-b-4 border-[#58228a] my-2 transition-all duration-700 ease-in-out;
+}
+
+.service-card:hover {
+    @apply bg-gradient-to-r from-[#4c1f75] to-[#2c1640] -translate-y-5 border-none;
+}
+

@@ -1,0 +1,29 @@
+<div class="bg-black h-auto flex justify-center items-center text-white font-body">
+
+   <div class="w-3/4 grid grid-cols-1 md:grid-cols-6 mb-10">
+        <div class="col-span-2">
+            <p class="text-slate-600 font-bold mb-10"><i class="text-sm mr-3 fa-regular fa-circle"></i>SERVICES</p>
+            <h1 class="font-bold text-5xl">What I <span class="word-art">Do</span></h1>
+        </div>
+
+        <div class="col-span-4 flex flex-col gap-5">
+
+            <div class="service-card" *ngFor="let service of services">
+
+                <p class="text-3xl font-semibold"> {{service.number}} </p>
+                <p class="text-3xl font-semibold">  {{service.skill}} </p>
+                <P class="text-slate-300">
+                    {{service.highlight}}
+                </P>
+
+                
+
+
+            </div>
+
+
+        </div>
+   </div>
+
+
+</div>
