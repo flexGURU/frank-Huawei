@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { EmailjsService } from '../../services/emailjs.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-contact',
@@ -10,6 +12,9 @@ import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
+
+  emailjs = inject(EmailjsService)
+  toastr = inject(ToastrService)
 
   contactDetails: FormGroup
 
@@ -24,10 +29,13 @@ export class ContactComponent {
   }
 
   get formControls(){
-    return this.contactDetails.controls
+    return this.contactDetails.controls;
   }
 
   submit(){
+    // this.emailjs.sendEmail(this.contactDetails);
+    this.toastr.success('Hello world!', 'Toastr fun!');
+    console.log(this.contactDetails.value);
     
   }
 

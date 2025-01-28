@@ -28,12 +28,10 @@ export class EmailjsService {
       );
       
       contactDetails.reset();
-      if (response.status == 200 ) {
-        this.toastr.success("Email sent successfully")
-      } else {
-        this.toastr.warning("Email not sent")
-
-      }
+      this.toastr.success("Email sent successfully");
+      console.log(response);
+      
+      
     } catch (error) {
       console.error('Error sending email:', error);
       this.toastr.error('Failed to send email');
