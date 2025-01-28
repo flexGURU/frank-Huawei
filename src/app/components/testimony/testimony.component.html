@@ -1,0 +1,31 @@
+<div class="bg-black min-h-screen text-white font-body flex flex-col items-center justify-center p-2 md:p-10">
+    <div class="mt-10 md:mt-0 md:mb-10 px-2 md:w-3/4">
+        <p class="text-slate-400 font-bold my-10">
+            <i class="text-sm mr-3 fa-regular fa-circle"></i>Testimonials
+        </p>
+        <h1 class="text-4xl md:text-5xl md:tracking-widest font-bold">
+            What Others <span class="text-pink-500">Say</span>
+        </h1>
+    </div>
+
+    <div class="px-1 md:px-0 md:w-11/12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8">
+        <div class="testimony-card bg-zinc-900 p-8 rounded-lg flex flex-col min-h-[500px]" *ngFor="let test of testimonies">
+            <hr class="text-slate-700 border border-slate-300 my-6">
+            
+            <div class="flex-grow relative">
+                <i class="fa-solid fa-quote-left absolute left-6 text-5xl text-[#ff82f3]"></i>
+                <p class="my-12 text-left pl-16 text-base tracking-wider font-extralight text-slate-400 ">
+                    {{test.key}}
+                </p>
+            </div>
+
+            <div class="flex items-center mt-auto pt-4">
+                <img src={{test.img}} class="rounded-full w-16 h-16 object-cover border border-slate-400 m-2" alt="profile">
+                <div class="text-left ml-3">
+                    <p class="font-bold">{{test.name}}</p>
+                    <p class="text-slate-400 text-sm font-light">{{test.position}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

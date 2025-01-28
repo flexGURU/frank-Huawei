@@ -13,19 +13,34 @@ export class AboutComponent {
   services = [
     {
       number: "01",
-      skill: "DESIGN",
-      highlight: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut",
+      skill: "Network Planning & Optimization",
+      highlight: "Expert planning and optimization of GSM, UMTS, LTE & NR networks, ensuring optimal coverage and capacity for telecommunications infrastructure",
     },
     {
-      number: "01",
-      skill: "DESIGN",
-      highlight: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut",
+      number: "02",
+      skill: "5G Solutions",
+      highlight: "Specialized implementation of 5G Fixed Wireless Access and network development strategies, driving next-generation connectivity solutions",
     },
     {
-      number: "01",
-      skill: "DESIGN",
-      highlight: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut",
+      number: "03",
+      skill: "Rural Connectivity",
+      highlight: "Strategic planning and deployment of rural network solutions across Sub-Saharan Africa, bridging the digital divide",
     },
+    {
+      number: "04",
+      skill: "Data Analytics",
+      highlight: "Advanced network analysis and visualization using tools like Tableau and Rabbit to generate actionable insights for network improvement",
+    },
+    {
+      number: "05",
+      skill: "Technical Consultancy",
+      highlight: "Professional guidance on spectrum allocation, site evolution, and network capacity optimization for maximum efficiency",
+    },
+    {
+      number: "06",
+      skill: "Infrastructure Development",
+      highlight: "Comprehensive planning and execution of new site builds and frequency modernization projects",
+    }
   ]
 
 }

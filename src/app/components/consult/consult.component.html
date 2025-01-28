@@ -1,16 +1,18 @@
-<div class="bg-black min-h-screen  text-white font-body flex items-center justify-center p-10">
+<div class="bg-black min-h-screen  text-white font-body flex items-center justify-center p-2 md:p-10">
 
-    <div class="w-3/4">
+    <div class="md:w-3/4">
 
-        <div class="mb-10">
-            <h1 class="text-5xl tracking-widest font-bold">What I <span class="word-art">Offer</span></h1>
+        <div class="mt-10 md:mt-0 md:mb-10">
+            <p class="text-slate-400 font-bold mb-10"><i class="text-sm mr-3 fa-regular fa-circle"></i>CONSULTANCY</p>
+
+            <h1 class="text-5xl md:tracking-widest font-bold">What I <span class="word-art">Offer</span></h1>
         </div>
     
         <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-3 mb-10">
             <div>
                 <div class="consult-card ">
         
-                    <p class="text-5xl leading-relaxed font-bold">Driving Growth <i class="fa-solid fa-star animate-spin-slow"></i> <br> Through Product Management</p>
+                    <p class="text-3xl md:text-5xl leading-relaxed font-bold">Driving Growth <i class="text-[#ff82f3] fa-solid fa-star animate-spin-slow"></i> <br> Through Product Management</p>
                     <p class="leading-snug text-slate-400">
                         Product management involves developing innovative strategies and solutions to address 
                         technical and commercial challenges, ensuring businesses stay ahead in a competitive market.
@@ -18,26 +20,35 @@
             
                 </div>
 
-                <div class="mt-12 flex items-center justify-between">
-                    <a href="" class="btn tracking-wider">Let's Get Started<i class="fa-solid fa-arrow-right-long ml-2 "></i></a>
+                <div class="mt-12 md:flex flex-col md:flex-row items-center justify-between hidden">
+                    <a class="btn md:tracking-wider" (click)="scrollToSection('contact')">Let's Get Started<i class="fa-solid fa-arrow-right-long ml-2 "></i></a>
                     <div class="flex flex-col gap-3">
-                        <a href=""><i class="fa-solid fa-envelope mr-2 text-lg"></i>mukunajohngmail.com</a>
-                        <a href=""><i class="fa-solid fa-phone text-lg mr-2"></i>+254710257237</a>
+                        <a href="mailto:frankaris07@gmail.com"><i class="fa-solid fa-envelope mr-2 text-lg"></i>frankaris07&#64;gmail.com</a>
+                        <a href="tel:+254728132704"><i class="fa-solid fa-phone text-lg mr-2"></i>+254 728 132704</a>
                     </div>
                 </div>
             </div>
         
-            <div class="flex justify-center items-center relative">
+            <div class="flex justify-center items-center relative ">
                 <img src="../../../assets/mr_img.png" class="w-4/5" alt="">
 
-                <div class="tags word-art top-3">Statistics</div>
-                <div class="tags  word-art left-4">Data Analysis</div>
-                <div class="tags  word-art right-12">Innovation</div>
+                <div class="tags word-art top-0 md:top-3">Statistics</div>
+                <div class="tags  word-art left-0 md:left-4">Data Analysis</div>
+                <div class="tags  word-art right-0 md:right-12">Innovation</div>
     
+            </div>
+
+            
+            <div class="mt-12 flex flex-col items-center justify-between md:hidden">
+                <a class="btn tracking-wider mb-4" (click)="scrollToSection('contact')">Let's Get Started<i class="fa-solid fa-arrow-right-long ml-2 "></i></a>
+                <div class="flex flex-col gap-3">
+                    <a href=""><i class="fa-solid fa-envelope mr-2 text-lg"></i>mukunajohngmail.com</a>
+                    <a href=""><i class="fa-solid fa-phone text-lg mr-2"></i>+254710257237</a>
+                </div>
             </div>
         </div>
 
-        <div class="absolute left-0 right-0 w-full bg-gradient-to-r from-[#4c1f75] to-[#2c1640] py-6 mt-10">
+        <div class="absolute left-0 right-0 w-full bg-gradient-to-r from-[#4c1f75] to-[#2c1640] py-6 mb-10">
             <div class="relative overflow-hidden ">
                 <div class="flex animate-scroll whitespace-nowrap space-x-12 items-center h-full">
                     <div class="skill-slider flex items-center" *ngFor="let skill of skills">

@@ -1,0 +1,16 @@
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-group i {
+  position: absolute;
+  left: 10px; /* Adjust spacing */
+  color: #ccc;
+}
+
+.input-group .input-form {
+  padding-left: 35px; 
+  width: 100%; 
+}

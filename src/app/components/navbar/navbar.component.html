@@ -1,18 +1,78 @@
-<div class="bg-navbar  text-white p-10 font-body fixed w-full z-10">
-    <div class="flex flex-row justify-evenly items-center">
-        <div class="">
+<div 
+  *ngIf="isOpen" 
+  class="fixed inset-0 bg-black/50 transition-opacity duration-300"
+  style="top: 88px;"
+  (click)="closeMenu()"
+></div>
+<div class="bg-navbar bg-black text-white p-4 md:p-4 font-body fixed w-full z-10  top-0 left-0  ">
+    <div class="flex flex-row justify-between md:justify-evenly items-center">
+        <div class="cursor-pointer" (click)="scrollToSection('home')">
             <p class="font-bold text-2xl font-logo "><span class="text-4xl">F</span><span class="underline">.Kamau</span></p>
         </div>
 
-        <nav>
-            <ul class="flex flex-row gap-10">
-                <li><a class="nav-hover" href="#about">About Me</a></li>
-                <li><a class="nav-hover" href="#experience">Experience</a></li>
-                <li><a class="nav-hover" href="#skills">Skills</a></li>
-                <li><a class="nav-hover" href="#achievements">Achievements</a></li>
-            </ul>
+        <nav class="hidden md:block">
+          <ul class="flex flex-row gap-8">
+            <li>
+              <a (click)="scrollToSection('home')" class="nav-hover">Home</a>
+            </li>
+            <li>
+              <a (click)="scrollToSection('about')" class="nav-hover">About Me</a>
+            </li>
+            <li>
+              <a (click)="scrollToSection('work')" class="nav-hover">Work</a>
+            </li>
+            <li>
+              <a (click)="scrollToSection('consult')" class="nav-hover">Skills</a>
+            </li>
+           
+            <li>
+              <a (click)="scrollToSection('testimony')" class="nav-hover">Testimonies</a>
+            </li>
+          
+          </ul>
+      
         </nav>
 
-        <a class="btn tracking-widest" href="#contact">LET'S TALK</a>
+        <a class="btn tracking-widest hidden md:block" (click)="scrollToSection('consult')" >LET'S TALK</a>
+
+        
+    <div class="md:hidden cursor-pointer" (click)="toggle()">
+        <i
+          class="fa-regular fa-circle-xmark transition duration-1000 text-3xl"
+          [ngClass]="{ 'hidden': !isOpen }"
+        ></i>
+        <i
+          class="fa-solid fa-list transition duration-1000 text-3xl"
+          [ngClass]="{ 'hidden': isOpen }"
+        ></i>
+      </div>
+    </div>
+
+
+    <div
+    *ngIf="isOpen"
+    class="font-body text-slate-200 bg-prim p-4 shadow-2xl md:hidden fixed inset-x-0  z-50 flex flex-col gap-3 bg-primgray"
+    >
+    <ul class="flex flex-col gap-8">
+      <li>
+        <a (click)="scrollToSection('home')" class="nav-hover">Home</a>
+      </li>
+      <li>
+        <a (click)="scrollToSection('about')" class="nav-hover">About Me</a>
+      </li>
+      <li>
+        <a (click)="scrollToSection('work')" class="nav-hover">Work</a>
+      </li>
+     
+      <li>
+        <a (click)="scrollToSection('testimony')" class="nav-hover">Testimonies</a>
+      </li>
+    
+    </ul>
+
+    <div class="md:hidden">
+      <a (click)="scrollToSection('consult')"  >
+        <button class="btn">Let's Talk</button>
+      </a>
     </div>
 </div>

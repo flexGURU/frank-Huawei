@@ -6,11 +6,12 @@ import { AboutComponent } from "./components/about/about.component";
 import { WorkComponent } from "./components/work/work.component";
 import { ConsultComponent } from "./components/consult/consult.component";
 import { ContactComponent } from "./components/contact/contact.component";
+import { TestimonyComponent } from "./components/testimony/testimony.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, HomeComponent, AboutComponent, WorkComponent, ConsultComponent, ContactComponent],
+  imports: [ NavbarComponent, HomeComponent, AboutComponent, WorkComponent, ConsultComponent, ContactComponent, TestimonyComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
