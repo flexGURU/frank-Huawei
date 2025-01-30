@@ -24,8 +24,16 @@ interface Achievement {
 
 export class AchievementComponent {
 
-  activeCategory: string = 'All';
-  categories: string[] = ['All', 'Events', 'Awards', 'Business', 'Leadership'];
+  certs: string[] = [
+    "Cyber Security for Service Works (Huawei)",
+    "AWS Solution Architect (Diploma)",
+    "Python Programming (Basic)",
+    "Interconnecting CISCO Networking Devices (CCNA, Diploma)",
+    "HCIA 5G",
+    "Boundary Meters Installation and Commissioning (Hexing)"
+  ]
+  
+
 
   achievements: Achievement[] = [
     {
@@ -40,6 +48,16 @@ export class AchievementComponent {
     },
     {
       year: "2024",
+      title: "High-Level Customer Engagement at AfricaCom",
+      category: "Leadership",
+      description: "Guided customers on macro solutions and 5G business success",
+      location: "Cape Town, SA",
+      icon: "fas fa-crown",
+      color: "from-purple-600 to-pink-500",
+      highlight: true
+    },
+    {
+      year: "2024",
       title: "Safaricom Mini MWC",
       category: "Events",
       description: "Led strategic discussions on network evolution and 5G implementation strategies",
@@ -49,13 +67,12 @@ export class AchievementComponent {
     },
     {
       year: "2023",
-      title: "AfricaCom Leadership",
-      category: "Leadership",
-      description: "Guided high-level customer engagements on macro solutions and 5G business success",
+      title: "AfricaCom Participation",
+      category: "Events",
+      description: "Engaged in AfricaCom 2023 discussions on future telecom advancements",
       location: "Cape Town, SA",
-      icon: "fas fa-crown",
-      color: "from-purple-600 to-pink-500",
-      highlight: true
+      icon: "fas fa-users",
+      color: "from-orange-600 to-red-500"
     },
     {
       year: "2023",
@@ -69,34 +86,34 @@ export class AchievementComponent {
     },
     {
       year: "2023",
-      title: "Botswana FWA Project",
+      title: "Botswana CTO FWA Engagements",
       category: "Business",
-      description: "Led successful FWA deployment strategy and implementation",
+      description: "Led discussions on Fixed Wireless Access strategies in Botswana",
       location: "Botswana",
       icon: "fas fa-project-diagram",
       color: "from-green-600 to-emerald-500"
     },
     {
       year: "2023",
-      title: "Zimbabwe Tech Summit",
+      title: "Zimbabwe Mini MWC",
       category: "Events",
       description: "Showcased innovative network solutions at Mini MWC",
       location: "Zimbabwe",
       icon: "fas fa-broadcast-tower",
       color: "from-indigo-600 to-blue-500"
+    },
+    {
+      year: "2024",
+      title: "Kenya Safaricom FWA Expansion",
+      category: "Business",
+      description: "Guided Safaricom's Fixed Wireless Access business expansion in Kenya",
+      location: "Kenya",
+      icon: "fas fa-network-wired",
+      color: "from-teal-600 to-cyan-500"
     }
-  ];
+];
 
-  get filteredAchievements() {
-    return this.activeCategory === 'All' 
-      ? this.achievements 
-      : this.achievements.filter(a => a.category === this.activeCategory);
-  }
 
-  setActiveCategory(category: string) {
-    this.activeCategory = category;
-  }
 
-  ngOnInit() {}
 
 }

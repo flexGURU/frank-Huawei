@@ -29,13 +29,18 @@ export class WorkComponent {
     },
     {
       company: 'Huawei Technologies', 
-      position: 'Management Trainee',
+      position: 'Big Data Architect',
       duration: 'Feb 2022 - July 2022',
       responsibilities: [
-        'Analyzed network data using Data Cube CEM',
-        'Deployed SmartCare services',
-        'Engaged with customers for SOC tool requirements'
+        "Managed the development and implementation of big data-driven solutions",
+        "Developed scalable data architectures and optimized data processing pipelines",
+        "Designed and implemented ETL/ELT processes using Hadoop",
+        "Managed data from on-premises and cloud provisioned resources",
+        "Wrote complex SQL queries and scripts in Python and Java",
+        "Developed data models and data visualizations for data analysis",
+        "Designed user interface and use cases utilizing Tableau skills, leading to an increase in productivity among non-technical users"
       ],
+      
       achievements: [
         'Successfully completed management training program',
         'Implemented effective data analysis solutions'

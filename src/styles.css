@@ -38,7 +38,7 @@ html {
 }
 
 .socials {
-    @apply rounded-full bg-primgray text-white p-9 transition-all duration-300;
+    @apply rounded-full bg-zinc-900 text-white p-9 transition-all duration-300;
 }
 
 .socials:hover {
@@ -46,7 +46,7 @@ html {
 }
 
 .service-card {
-    @apply bg-primgray p-2 md:p-10 flex flex-col md:flex-row gap-4 md:gap-16 rounded-lg rounded-b-none border-b-4 border-[#58228a] my-2 transition-all duration-700 ease-in-out;
+    @apply bg-zinc-900 p-2 md:p-10 flex flex-col md:flex-row gap-4 md:gap-16 rounded-lg rounded-b-none border-b-4 border-[#58228a] my-2 transition-all duration-700 ease-in-out;
 }
 
 .service-card:hover {
@@ -54,11 +54,11 @@ html {
 }
 
 .consult-card {
-    @apply bg-primgray p-2 md:p-10 flex flex-col gap-4 md:gap-10 rounded-lg rounded-b-none border-b-4 border-[#58228a] my-2 transition-all duration-700 ease-in-out;
+    @apply bg-zinc-900 p-2 md:p-10 flex flex-col gap-4 md:gap-10 rounded-lg rounded-b-none border-b-4 border-[#58228a] my-2 transition-all duration-700 ease-in-out;
 }
 
 .tags {
-    @apply bg-primgray border absolute p-1 font-bold text-xs md:text-sm flex flex-col gap-4 md:gap-10 rounded-lg ;
+    @apply bg-zinc-900 border absolute p-1 font-bold text-xs md:text-sm flex flex-col gap-4 md:gap-10 rounded-lg ;
 }
 
 .skill-slider {
@@ -66,7 +66,7 @@ html {
 }
 
 .input-form {
-    @apply p-2 rounded-xl text-black bg-btn border border-[#4c1f75];
+    @apply p-2 rounded-xl text-black bg-zinc-800 border border-[#4c1f75];
 }
 
 .experience-card {
@@ -74,5 +74,9 @@ html {
 }
 
 .testimony-card {
-    @apply bg-primary p-2 md:p-4 text-center relative rounded-lg mt-8 md:mt-0;
+    @apply bg-zinc-900 p-2 md:p-4 text-center relative rounded-lg mt-8 md:mt-0;
+}
+
+.achieve-card {
+    @apply bg-transparent relative p-8 h-full border border-zinc-800/50  transition-all duration-500 hover:-translate-y-2 flex flex-col;
 }
