@@ -1,0 +1,57 @@
+<div class="bg-black h-auto border p-3 md:px-20 text-white grid items-center justify-center font-body">
+    <div class="min-h-screen bg-black overflow-hidden relative py-20">
+      <!-- Animated background gradients -->
+      <div class="absolute inset-0 opacity-40">
+        <div class="absolute top-0 -left-1/4 w-1/2 h-1/2 bg-gradient-to-br from-purple-500/30 to-transparent rounded-full blur-3xl animate-pulse text-5xl">dd</div>
+        <div class="absolute bottom-0 -right-1/4 w-1/2 h-1/2 bg-gradient-to-tl from-pink-500/30 to-transparent rounded-full blur-3xl animate-pulse"></div>
+      </div>
+  
+      <!-- Cards Grid -->
+      <div class="max-w-7xl mx-auto px-4 relative">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Loop over the achievements array -->
+          <div *ngFor="let achievement of achievements" class="group relative">
+            <!-- Card -->
+            <div class="relative h-full overflow-hidden">
+              <!-- Background Gradient -->
+              <div [class]="'absolute inset-0 bg-gradient-to-br ' + achievement.color + ' opacity-10 group-hover:opacity-20 transition-opacity duration-500'"></div>
+  
+              <!-- Card Content -->
+              <div class="relative bg-zinc-900/90 backdrop-blur-xl rounded-2xl p-8 h-full border border-zinc-800/50 group-hover:border-zinc-700/50 transition-all duration-500 hover:-translate-y-2 flex flex-col">
+                <!-- Top Section -->
+                <div class="flex justify-between items-start mb-6">
+                  <div [class]="'p-4 rounded-xl bg-gradient-to-br ' + achievement.color + ' group-hover:scale-110 transition-transform duration-500'">
+                    <i [class]="achievement.icon + ' text-2xl'"></i>
+                  </div>
+                  <span class="text-pink-500 font-bold">{{achievement.year}}</span>
+                </div>
+  
+                <!-- Content -->
+                <div class="flex-1 space-y-4 overflow-y-auto">
+                  <h3 class="text-2xl font-bold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r from-pink-500 to-purple-500">
+                    {{achievement.title}}
+                  </h3>
+                  <p class="text-slate-400 leading-relaxed">
+                    {{achievement.description}}
+                  </p>
+                </div>
+  
+                <!-- Footer -->
+                <div class="pt-4 flex justify-between items-center">
+                  <span class="text-sm px-4 py-1 rounded-full bg-zinc-800/50 text-zinc-400">
+                    {{achievement.location}}
+                  </span>
+                  <span class="text-sm font-medium text-pink-500">
+                    {{achievement.category}}
+                  </span>
+                </div>
+  
+                <!-- Hover Effect Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

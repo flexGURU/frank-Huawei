@@ -7,11 +7,12 @@ import { WorkComponent } from "./components/work/work.component";
 import { ConsultComponent } from "./components/consult/consult.component";
 import { ContactComponent } from "./components/contact/contact.component";
 import { TestimonyComponent } from "./components/testimony/testimony.component";
+import { AchievementComponent } from "./components/achievement/achievement.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ NavbarComponent, HomeComponent, AboutComponent, WorkComponent, ConsultComponent, ContactComponent, TestimonyComponent],
+  imports: [NavbarComponent, HomeComponent, AboutComponent, WorkComponent, ConsultComponent, ContactComponent, TestimonyComponent, AchievementComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
