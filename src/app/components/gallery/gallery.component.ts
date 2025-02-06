@@ -23,8 +23,6 @@ export class GalleryComponent {
     "../../../assets/3.jpg",
     "../../../assets/8.jpg",
 
-
-
   ]
 
  
