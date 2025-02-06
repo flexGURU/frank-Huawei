@@ -33,9 +33,7 @@ export class ContactComponent {
   }
 
   submit(){
-    // this.emailjs.sendEmail(this.contactDetails);
-    this.toastr.success('Hello world!', 'Toastr fun!');
-    console.log(this.contactDetails.value);
+    this.emailjs.sendEmail(this.contactDetails);
     
   }
 

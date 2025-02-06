@@ -14,29 +14,20 @@ export class ConsultComponent {
   
 
   skills = [
-    // Technical Skills - First Set
-    "Network Planning",
-    "5G Technologies",
-    "Data Analysis",
-    "Python Programming",
-    "Wireless Networks",
-    "Cloud Solutions",
-    "Fiber Optics",
-    "Network Optimization",
-    "Project Management",
-    "Technical Sales",
-    
-    // Technical Skills - Second Set
-    "Network Planning",
-    "5G Technologies", 
-    "Data Analysis",
-    "Python Programming",
-    "Wireless Networks",
-    "Cloud Solutions",
-    "Fiber Optics",
-    "Network Optimization",
-    "Project Management",
-    "Technical Sales"
+    "Business and Network Consultancy",
+    "MBB and Home Broadband Network Planning",
+    "Product and User Development",
+    "Budget Guidance",
+    "5G Business Success",
+    "Data Governance",
+    "Data Value Realization",
+    "Business and Network Consultancy",
+    "MBB and Home Broadband Network Planning",
+    "Product and User Development",
+    "Budget Guidance",
+    "5G Business Success",
+    "Data Governance",
+    "Data Value Realization"
  ]
 
 

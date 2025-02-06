@@ -40,7 +40,7 @@ export class AchievementComponent {
       year: "2024",
       title: "Future Star Award",
       category: "Awards",
-      description: "Recognition for outstanding innovation and leadership potential in telecommunications",
+      description: "Awarded for pioneering new approaches and implementing a customer-centric strategy to achieve key targets.",
       location: "Global Recognition",
       icon: "fas fa-star",
       color: "from-yellow-600 to-amber-500",
@@ -50,7 +50,7 @@ export class AchievementComponent {
       year: "2024",
       title: "High-Level Customer Engagement at AfricaCom",
       category: "Leadership",
-      description: "Guided customers on macro solutions and 5G business success",
+      description: "Strengthened partnerships with Sub-Saharan operators through high-level customer interactions, leading to improved network quality.",
       location: "Cape Town, SA",
       icon: "fas fa-crown",
       color: "from-purple-600 to-pink-500",
@@ -60,7 +60,7 @@ export class AchievementComponent {
       year: "2024",
       title: "Safaricom Mini MWC",
       category: "Events",
-      description: "Led strategic discussions on network evolution and 5G implementation strategies",
+      description: "Led key discussions on 5G business success and affordable devices, driving a 200,000+ increase in 5G terminals and boosting site penetration.",
       location: "Nairobi, Kenya",
       icon: "fas fa-globe",
       color: "from-blue-600 to-cyan-500"
@@ -69,7 +69,7 @@ export class AchievementComponent {
       year: "2023",
       title: "AfricaCom Participation",
       category: "Events",
-      description: "Engaged in AfricaCom 2023 discussions on future telecom advancements",
+      description: "Engaged in AfricaCom 2023 discussions on future telecom advancements and strategic industry collaborations.",
       location: "Cape Town, SA",
       icon: "fas fa-users",
       color: "from-orange-600 to-red-500"
@@ -78,7 +78,7 @@ export class AchievementComponent {
       year: "2023",
       title: "MVP at Fort Irwin",
       category: "Awards",
-      description: "Recognized as Best Team Leader and Most Valuable Player during China training",
+      description: "Recognized as Best Team Leader and Learning MVP at Huawei’s Global Wireless Network Training in Shenzhen, China.",
       location: "Fort Irwin, China",
       icon: "fas fa-trophy",
       color: "from-rose-600 to-red-500",
@@ -88,7 +88,7 @@ export class AchievementComponent {
       year: "2023",
       title: "Botswana CTO FWA Engagements",
       category: "Business",
-      description: "Led discussions on Fixed Wireless Access strategies in Botswana",
+      description: "Participated in 5G high-level design and business discussions, leading to the development of Botswana's 5G infrastructure.",
       location: "Botswana",
       icon: "fas fa-project-diagram",
       color: "from-green-600 to-emerald-500"
@@ -97,7 +97,7 @@ export class AchievementComponent {
       year: "2023",
       title: "Zimbabwe Mini MWC",
       category: "Events",
-      description: "Showcased innovative network solutions at Mini MWC",
+      description: "Led discussions with Zimbabwe TelOne, NetOne, and Liquid Telecom on 5G business success, contributing to 5G development in Zimbabwe.",
       location: "Zimbabwe",
       icon: "fas fa-broadcast-tower",
       color: "from-indigo-600 to-blue-500"
@@ -106,12 +106,13 @@ export class AchievementComponent {
       year: "2024",
       title: "Kenya Safaricom FWA Expansion",
       category: "Business",
-      description: "Guided Safaricom's Fixed Wireless Access business expansion in Kenya",
+      description: "Guided Safaricom’s Fixed Wireless Access business expansion, driving 5G adoption and improved customer experience.",
       location: "Kenya",
       icon: "fas fa-network-wired",
       color: "from-teal-600 to-cyan-500"
     }
-];
+  ];
+  
 
 
 

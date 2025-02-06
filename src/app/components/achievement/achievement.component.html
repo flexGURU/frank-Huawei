@@ -32,15 +32,23 @@
 
               <div class="flex-1 space-y-4 overflow-y-auto">
                 <h3 class="text-2xl font-bold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r from-pink-500 to-purple-500">
-                  <ng-container *ngIf="achievement.title === 'Kenya Safaricom FWA Expansion'; else normalTitle">
+                  <ng-container *ngIf="achievement.title === 'Kenya Safaricom FWA Expansion'; else checkZimbabwe">
                     <a href="https://search.app/849ZsKuypYeM8zaN7" target="_blank" class="text-blue-400 underline hover:text-blue-300">
                       {{achievement.title}}
                     </a>
                   </ng-container>
+                  <ng-template #checkZimbabwe>
+                    <ng-container *ngIf="achievement.title === 'Zimbabwe Mini MWC'; else normalTitle">
+                      <a href="https://search.app/gH43bNNETFzyHNtz6" target="_blank" class="text-blue-400 underline hover:text-blue-300">
+                        {{achievement.title}}
+                      </a>
+                    </ng-container>
+                  </ng-template>
                   <ng-template #normalTitle>
                     {{achievement.title}}
                   </ng-template>
                 </h3>
+                
                 <p class="text-slate-400 font-light leading-relaxed">
                   {{achievement.description}}
                 </p>

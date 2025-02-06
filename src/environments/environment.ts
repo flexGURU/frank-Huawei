@@ -4,9 +4,9 @@ import { EnvironmentConfig } from "./environmnet.interface";
 export const environment: EnvironmentConfig = {
   production: true,
   emailjsconfig: {
-    publicKey: '',
-    serviceId: 'service_5vq42js',
-    templateId: 'template_5ig7jes',
-    emailAddress: "mukunajohn329@gmail.com",
+    publicKey: 'AmCEmyk5Zes3jigdv',
+    serviceId: 'service_qjcabdn',
+    templateId: 'template_zhm45kv',
+    emailAddress: "frankaris07@gmail.com",
   },
 };
