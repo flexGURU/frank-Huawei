@@ -22,6 +22,7 @@ export class GalleryComponent {
     "../../../assets/4.jpg",
     "../../../assets/3.jpg",
     "../../../assets/8.jpg",
+    "../../../assets/13.jpg",
 
 
 
