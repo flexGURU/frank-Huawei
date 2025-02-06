@@ -8,11 +8,12 @@ import { ConsultComponent } from "./components/consult/consult.component";
 import { ContactComponent } from "./components/contact/contact.component";
 import { TestimonyComponent } from "./components/testimony/testimony.component";
 import { AchievementComponent } from "./components/achievement/achievement.component";
+import { GalleryComponent } from "./components/gallery/gallery.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NavbarComponent, HomeComponent, AboutComponent, WorkComponent, ConsultComponent, ContactComponent, TestimonyComponent, AchievementComponent],
+  imports: [NavbarComponent, HomeComponent, AboutComponent, WorkComponent, ConsultComponent, ContactComponent, TestimonyComponent, AchievementComponent, GalleryComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
