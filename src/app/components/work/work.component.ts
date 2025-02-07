@@ -12,21 +12,35 @@ export class WorkComponent {
   experience = [
     {
       company: 'Huawei Technologies',
-      position: 'Product Manager / Regional Technical Sales',
-      duration: '2022 - Present',
+      position: 'Product Manager / Netwok Analyst / Regional Expert',
+      duration: 'December 2024 - Present',
       responsibilities: [
-        "Led Fixed Wireless Access strategies at Huawei, boosting market share and engagement",
-        "Optimized MBB and FWA synergy to enhance network performance in Southern Africa",
-        "Provided budget guidance for MTN and Airtel, improving financial outcomes",
-        "Implemented Rural Solutions to bridge the digital divide in Sub-Saharan Africa",
-        "Designed user-centric promotions with marketing teams to enhance engagement",
-        "Trained frontline product managers on technical skills and customer engagement",
-        "Planned wireless target networks, spectrum, site evolution, and capacity standards",
-        "Guided product managers on GSM, UMTS, LTE & NR network data analysis",
-        "Generated network insights using Tableau and Rabbit for better customer engagement",
-        "Analyzed network congestion and recommended optimization strategies",
-        "Planned new site builds, frequency modernization, and 5G FWA deployment",
-        "Recommended data tariff strategies to enhance user experience and competitiveness",
+        "Developed FWA strategies at Huawei, boosting market share.",
+        "Optimized MBB and FWA synergy for better network performance.",
+        "Guided budgets for MTN and Airtel, improving financial results.",
+        "Implemented Rural Solutions to reduce the digital divide.",
+        "Designed user-centric promotions to enhance engagement.",
+        "Trained product managers to improve technical skills."
+      ],
+      achievements: [
+        'Drove 5G Fixed Wireless Access sales across region',
+        'Successfully managed rural network solutions in Sub-Saharan Africa',
+        'Optimized network capacity reducing congestion points'
+      ]
+    },
+    {
+      company: 'Huawei Technologies',
+      position: 'Product Engineer / Southern Africa Region Technical Sales',
+      duration: 'December 2022 - December 2024',
+      responsibilities: [
+        "Plan wireless networks, site evolution, and spectrum use.",
+        "Provide budget guidance and forecast network growth.",
+        "Guide engineers on data collection and network analysis.",
+        "Generate insights using Tableau and Rabbit visualization.",
+        "Analyze congestion, coverage, and user experience, recommending solutions.",
+        "Plan new sites, frequency modernization, and 5G FWA expansion.",
+        "Assess data tariffs, market trends, and competitive strategies.",
+        "Collaborate with operators to align 5G initiatives with market needs."
       ],
       achievements: [
         'Drove 5G Fixed Wireless Access sales across region',
