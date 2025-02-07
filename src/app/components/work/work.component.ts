@@ -15,11 +15,18 @@ export class WorkComponent {
       position: 'Product Manager / Regional Technical Sales',
       duration: '2022 - Present',
       responsibilities: [
-        'Developed go-to-market strategies and budget planning',
-        'Led wireless network planning and optimization',
-        'Conducted data analysis for GSM, UMTS, LTE & NR networks',
-        'Generated network insights using Tableau visualization',
-        'Provided guidance on spectrum and network capacity'
+        "Led Fixed Wireless Access strategies at Huawei, boosting market share and engagement",
+        "Optimized MBB and FWA synergy to enhance network performance in Southern Africa",
+        "Provided budget guidance for MTN and Airtel, improving financial outcomes",
+        "Implemented Rural Solutions to bridge the digital divide in Sub-Saharan Africa",
+        "Designed user-centric promotions with marketing teams to enhance engagement",
+        "Trained frontline product managers on technical skills and customer engagement",
+        "Planned wireless target networks, spectrum, site evolution, and capacity standards",
+        "Guided product managers on GSM, UMTS, LTE & NR network data analysis",
+        "Generated network insights using Tableau and Rabbit for better customer engagement",
+        "Analyzed network congestion and recommended optimization strategies",
+        "Planned new site builds, frequency modernization, and 5G FWA deployment",
+        "Recommended data tariff strategies to enhance user experience and competitiveness",
       ],
       achievements: [
         'Drove 5G Fixed Wireless Access sales across region',
@@ -30,7 +37,7 @@ export class WorkComponent {
     {
       company: 'Huawei Technologies', 
       position: 'Big Data Architect',
-      duration: 'Feb 2022 - July 2022',
+      duration: 'July 2022 - December 2022',
       responsibilities: [
         "Managed the development and implementation of big data-driven solutions",
         "Developed scalable data architectures and optimized data processing pipelines",
@@ -51,10 +58,18 @@ export class WorkComponent {
       position: 'Field Engineer', 
       duration: 'Feb 2022 - July 2022',
       responsibilities: [
-        'Provided technical support for various systems',
-        'Conducted wireless hotspot surveys and installations',
-        'Designed and deployed wide area networks',
-        'Installed network devices and fiber networks'
+       "Provided technical support for various systems and technologies",
+      "Installed and integrated wireless hotspots (Ruckus, Cisco)",
+      "Tested products and optimized performance, cost, and schedule",
+      "Designed and debugged low-power embedded microprocessor systems",
+      "Developed specifications for product design and validation",
+      "Reduced costs and improved product performance",
+      "Designed and deployed Wide Area Networks and IoT solutions",
+      "Managed IoT network testing, deployment, and maintenance",
+      "Configured routers, switches, and network infrastructure",
+      "Installed fiber networks and configured Huawei AR/Cisco routers",
+      "Deployed and maintained microwave, E1/SIP, and P2P links",
+      "Troubleshot and maintained MPLS/P2P networks",
       ],
       achievements: [
         'Successfully deployed multiple LoRaWAN/NBIoT nodes',
