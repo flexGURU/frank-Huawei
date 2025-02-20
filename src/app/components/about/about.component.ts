@@ -28,8 +28,8 @@ export class AboutComponent {
     },
     {
       number: "04",
-      skill: "Data Analytics",
-      highlight: "Advanced network analysis and visualization using tools like Tableau and Rabbit to generate actionable insights for network improvement",
+      skill: "Handset affordability Initiatives",
+      highlight: "I spearhead the handset affordability initiative, focussing on making mobile phones more accessible to underserved populations in Africa",
     },
     {
       number: "05",

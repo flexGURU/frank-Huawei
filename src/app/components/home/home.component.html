@@ -1,69 +1,85 @@
-<div class="bg-black min-h-screen p-3 md:px-20  text-white grid md:flex md:flex-col items-center justify-center font-body">
+<div
+  class="bg-black min-h-screen p-3 md:px-20 text-white grid md:flex md:flex-col items-center justify-center font-body"
+>
+  <div class="mt-16 md:mt-0 md:mb- md:p-20">
+    <h1
+      class="text-3xl md:text-7xl font-bold uppercase tracking-widest text-center"
+    >
+      Francis Kariuki Kamau
+    </h1>
+  </div>
 
-    <div class="mt-16 md:mt-0 md:mb- md:p-20">
-        <h1 class="text-3xl md:text-7xl font-bold uppercase tracking-widest text-center">Francis Kariuki Kamau  </h1>
+  <div class="col-span-3 flex mt-4 items-center justify-center md:hidden">
+    <img
+      src="../../../assets/home.jpeg"
+      alt=""
+      class="border rounded-full w-3/4"
+    />
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-8 md:mt-4">
+    <div
+      class="col-span-2 flex flex-col gap-4 md:gap-10 justify-center text-left font-light md:p-4"
+    >
+      <div>
+        <h1 class="font-bold mb-2 text-xl">BIOGRAPHY</h1>
+        <P class="text-slate-300">
+          {{ bio }}
+        </P>
+      </div>
+
+      <div>
+        <h1 class="font-bold mb-2">SKILLS</h1>
+        <ul class="text-slate-300 marker:text-white">
+          <li *ngFor="let skill of skills">
+            <i class="fa-solid fa-check text-xs"></i> {{ skill }}
+          </li>
+        </ul>
+      </div>
+
+      <div class="my-2">
+        <a
+          href="../../../assets/Francis K Kamau cv.pdf"
+          target="_blank"
+          class="btn"
+          >Resume<i class="fa-solid fa-download ml-2" download></i
+        ></a>
+      </div>
     </div>
 
-    
-    <div class="col-span-3 flex mt-4 items-center justify-center  md:hidden">
-        <img src="../../../assets/home.jpeg" alt="" class="border rounded-full w-3/4 ">
-
+    <div class="col-span-4 md:flex md:items-center md:justify-center hidden">
+      <img
+        src="../../../assets/home.jpeg"
+        alt=""
+        class="border rounded-full w-3/5"
+      />
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-8 md:mt-4">
-
-            <div class="col-span-2 flex flex-col gap-4 md:gap-10 justify-center text-left font-light md:p-4 ">
-                <div>
-                    <h1 class="font-bold mb-2 text-xl">BIOGRAPHY</h1>
-                    <P class="text-slate-300">
-                      {{ bio }} 
-                    </P>
-                </div>
-
-                <div>
-                    <h1 class="font-bold mb-2">SKILLS</h1>
-                    <ul class="text-slate-300  marker:text-white">
-                        <li *ngFor="let skill of skills"><i class="fa-solid fa-check text-xs"></i> {{ skill }} </li>
-                    </ul>
-
-
-                </div>
-
-                <div class="my-2">
-                    <a href="../../../assets/Francis K Kamau cv.pdf" target="_blank" class="btn">Resume<i class="fa-solid fa-download ml-2" download></i></a>
-                </div>
-            </div>
-
-            <div class="col-span-4 md:flex md:items-center md:justify-center hidden ">
-                <img 
-                  src="../../../assets/home.jpeg" 
-                  alt="" 
-                  class="border rounded-full w-3/5"
-                >
-              </div>
-              
-
-            <div class="col-span-2  flex flex-col justify-center ">
-
-                <h1 class="font-bold text-3xl mt-2 mb-1 md:mb-4">Connect</h1>
-                <div class="flex md:flex-col gap-4 text-3xl p-4 ">
-                    <a href="https://www.linkedin.com/in/francis-kariuki-6b787a127/" target="_blank" class="socials flex items-center justify-center w-12 h-12">
-                        <i class="fa-brands fa-linkedin-in text-right"></i>
-                    </a>
-                    <a href="https://x.com/frankkaris1" target="_blank" class="socials flex items-center justify-center w-12 h-12">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>                        
-                    <a href="mailto:frankaris07@gmail.com" target="_blank" class="socials flex items-center justify-center w-12 h-12">
-                        <i class="fa-regular fa-envelope"></i>
-                    </a>
-                </div>
-                
-
-
-            </div>
-
-
+    <div class="col-span-2 flex flex-col justify-center">
+      <h1 class="font-bold text-3xl mt-2 mb-1 md:mb-4">Connect</h1>
+      <div class="flex md:flex-col gap-4 text-3xl p-4">
+        <a
+          href="https://www.linkedin.com/in/francis-kariuki-6b787a127/"
+          target="_blank"
+          class="socials flex items-center justify-center w-12 h-12"
+        >
+          <i class="fa-brands fa-linkedin-in text-right"></i>
+        </a>
+        <a
+          href="https://x.com/frankkaris1"
+          target="_blank"
+          class="socials flex items-center justify-center w-12 h-12"
+        >
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a
+          href="mailto:frankaris07@gmail.com"
+          target="_blank"
+          class="socials flex items-center justify-center w-12 h-12"
+        >
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+      </div>
     </div>
-
-
+  </div>
 </div>
