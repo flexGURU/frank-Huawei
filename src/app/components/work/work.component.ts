@@ -20,7 +20,8 @@ export class WorkComponent {
         "Guided budgets for MTN and Airtel, improving financial results.",
         "Implemented Rural Solutions to reduce the digital divide.",
         "Designed user-centric promotions to enhance engagement.",
-        "Trained product managers to improve technical skills."
+        "Trained product managers to improve technical skills.",
+        "I spearheaded handset affordability initiative focussing on making mobile phones more accessible to underserved populations in Africa"
       ],
       achievements: [
         'Drove 5G Fixed Wireless Access sales across region',
